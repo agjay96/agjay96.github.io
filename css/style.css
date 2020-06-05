@@ -177,12 +177,12 @@ a {
     color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
-     display: -ms-flexbox;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-     -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 100vh;
     text-align: center;
 }
@@ -197,6 +197,7 @@ a {
   border-color: 2px #c25450;
   color: #c25450;
   font-size: 16px;
+  margin-top: 30px;
 }
 
 #intro .btn-warning:hover {
