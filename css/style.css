@@ -191,6 +191,21 @@ a {
   letter-spacing: 2px;
 }
 
+#intro .btn-warning{
+  transform: translateY(20px);
+  background-color: transparent;
+  border-color: 2px #c25450;
+  color: #c25450;
+  font-size: 16px;
+}
+
+#intro .btn-warning:hover {
+  background: #c25450;
+  border-color: transparent;
+  color: #ffffff;
+
+}
+
 /*----------------------------------------------------------------------------
                             Intro section Icons           
 -----------------------------------------------------------------------------*/
@@ -378,6 +393,8 @@ a {
     padding-top: 7rem;
     padding-bottom: 7rem;
     color:#ffffff;
+    height: 100vh;
+
 }
 
 #education p {
@@ -397,7 +414,11 @@ a {
   transform: scale(1.2);
 }
 
-
+#education h1{
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 50px;
+}
 #education h2{
   color: #ffc168;
 }
@@ -510,8 +531,13 @@ hr { display: block;
 
   p {font-size: 13px;}
 
+  body{
+    overflow-x: hidden;
+  }
+
   .custom-navbar .navbar-brand {
     font-size: 2rem;
+    transform: translateX(-50px);
   }
 
   .custom-navbar .nav li a {
@@ -519,23 +545,39 @@ hr { display: block;
 	line-height: 20px;
   }
 
-  #intro { height: 65vh; }
-
-  #video iframe {
-    margin-top: 42px;
+  #intro { 
+    height: 100vh; 
   }
 
-  #contact .contact_detail {
-  background: #ffffff;
-  padding: 10rem 3rem 10rem 5rem;
+  #skill{
+    height: 90vh;
+  }
+
+  #about{
+    padding-left: 80px;
+  }
+  #about img{
+    width: 250px;
+  }
+
+  .column {
+    width: 160px;
+  }
+
+  #education img{
+    width: 230px;
+    height: 80px;
+  }
 }
 
-}
+@media (max-width: 850px) {
 
-@media (max-width: 768px) {
-
+  body{
+    overflow-x: hidden;
+  }
   .custom-navbar .navbar-brand {
     line-height: 20px;
+    transform: translateX(0px);
   }
 
   #overview img,
@@ -548,17 +590,34 @@ hr { display: block;
     font-size: 13px;
   }
 
-  #program img {
-    padding-bottom: 32px;
+  #about img{
+    width: 200px;
   }
 
-  #sponsors img {
-    padding-top: 22px;
+  #skill {
+    height: 100vh;
   }
 
-  #contact .contact_detail {
-    margin-top: 82px;
+  #skill h1{
+    padding-bottom: 20px;
   }
+
+  .column {
+    width: 160px;
+  }
+
+  #education img{
+    width: 200px;
+    height: 70px;
+  }
+
+  #foot .place{
+  transform: translateY(0px);
+  color: #6b6b47;
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 20px; 
+}
 
 }
 
@@ -567,6 +626,44 @@ hr { display: block;
   #intro {
     height: 100vh;
   }
+
+  #about{
+    height: 220vh;
+  }
+
+  #skill {
+    height: 140vh;
+  }
+
+  #skill h1{
+    padding-bottom: 20px;
+  }
+
+  #skill h3{
+    font-size: 15px;
+  }
+
+
+  .column {
+    width: 320px;
+    height: 150px;
+  }
+
+  #about{
+  height: 90vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 100px;
+  padding-bottom: 0px;
+  background-color: #f9f9f9;
+}
+
+#about img {
+  position: relative;
+  padding-bottom: 30px;
+  width: 150px;
+}
+
 
 }
 
